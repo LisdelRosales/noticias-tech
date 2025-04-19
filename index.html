@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal de Noticias Tech</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/morph/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+    </head>
+    <body class="bg-dark">
+        <div class="container bg-light">
+            <h1 class="text-primary-emphasis fw-bolder lh-sm text-center">Noticias Tech <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-newspaper m-1 align-text-top" viewBox="0 0 16 16">
+                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+                <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+              </svg></h1>
+            <h4 class="text-secondary-emphasis text-center">Donde encontrarás lo último de la tecnología en el mundo</h4>
+            <div class="container-fluid">
+                <!--nav bar-->
+                <nav class="navbar navbar-expand-lg bg-primary rounded flex-wrap" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"> <img src="newspaper.svg" alt="icon" height="50em" width="50em"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio
+                              <span class="visually-hidden">(current)</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ver más</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-sm-2" type="search" placeholder="Que quieres buscar?">
+                          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+                <!--tarjetas de noticias-->
+                <div class="card-group flex-column">
+                    <!--card 1-->
+                    <div class="card mb-3">
+                        <h3 class="card-header text-body-emphasis">La Guerra de los aranceles</h3>
+                        <div class="card-body">
+                        <h5 class="card-title text-body">Va a disparar el precio de un componente del que nadie habla: las unidades SSD</h5>
+                        <h6 class="card-subtitle text-muted">La Administración de EEUU ha incrementado los aranceles para los productos procedentes de China hasta el 145%.</h6>
+                        </div>
+                        <img src="https://i.blogs.es/fcd190/ssd-ap/1200_800.jpeg" alt="graficas" class="card-img img-fluid">
+                        <div class="card-body">
+                        <p class="card-text">Para los fabricantes de discos duros mecánicos no es nada fácil mudarse de un país a otro.</p>
+                        </div>
+                        <p class="card-text m-3">La guerra de los aranceles que ha desencadenado en todo el planeta el Gobierno de EEUU liderado por Donald Trump está haciendo estragos en los mercados.
+                        </p>
+                        <div class="card-body">
+                        <a href="https://www.xataka.com/componentes/guerra-aranceles-va-a-disparar-precio-componente-que-nadie-habla-unidades-ssd" class="card-link">Leer más</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                        2 days ago
+                        </div>
+                    </div>
+                    <!--card 2-->
+                    <div class="card mb-3">
+                        <h3 class="card-header text-body-emphasis">NVIDIA va a poder seguir vendiendo en China sus GPU H20 para IA.</h3>
+                        <div class="card-body">
+                        <h5 class="card-title text-body">Le ha costado una cena de 1 millón de dólares por comensal</h5>
+                        <h6 class="card-subtitle text-muted">El chip H20 es una revisión de las GPU para IA más potentes de NVIDIA con unas prestaciones menores.</h6>
+                        </div>
+                        <img src="https://i.blogs.es/901c64/nvidia-ap/1200_800.jpeg" alt="nvidialocal" class="card-img img-fluid">
+                        <div class="card-body">
+                        <p class="card-text">Sus ventas en China actualmente crecen un 50% trimestre a trimestre a pesar de la delicada coyuntura actual.</p>
+                        </div>
+                        <p class="card-text m-3">La GPU para aplicaciones de inteligencia artificial (IA) H20 está siendo la salvación de NVIDIA en China. Desde que entró en vigor el paquete de sanciones oficializado por la Administración de Joe Biden el 16 de noviembre de 2023...
+                        </p>
+                        <div class="card-body">
+                        <a href="https://www.xataka.com/empresas-y-economia/milagro-nvidia-va-a-poder-seguir-vendiendo-su-gpu-h20-para-ia-china-le-ha-costado-cena-1-millon-comensal" class="card-link">Leer más</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                        3 days ago
+                        </div>
+                    </div>
+                    <!--card 3-->
+                    <div class="card mb-3">
+                        <h3 class="card-header text-body-emphasis">EEUU amenaza a TSMC</h3>
+                        <div class="card-body">
+                        <h5 class="card-title text-body">si no construye sus fábricas de chips de Arizona se enfrentará a unos aranceles de hasta el 100%.</h5>
+                        <h6 class="card-subtitle text-muted">Actualmente TSMC está poniendo a punto tres fábricas de semiconductores de vanguardia en Arizona.</h6>
+                        </div>
+                        <img src="https://i.blogs.es/9659ae/tsmc-ap/1200_800.jpeg" alt="graficas" class="card-img img-fluid">
+                        <div class="card-body">
+                        <p class="card-text">El desarrollo de su infraestructura de producción de circuitos integrados en EEUU le permitirá esquivar los aranceles.</p>
+                        </div>
+                        <p class="card-text m-3">Donald Trump no ceja en su empeño con TSMC. Durante la campaña electoral el actual presidente de EEUU declaró en varias ocasiones que estaba decidido a tomar las decisiones que fuesen oportunas...
+                        </p>
+                        <div class="card-body">
+                        <a href="https://www.xataka.com/empresas-y-economia/eeuu-amenaza-a-tsmc-no-construye-sus-fabricas-chips-arizona-se-enfrentara-a-unos-aranceles-100" class="card-link">Leer más</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                        4 days ago
+                        </div>
+                    </div>   
+                </div>
+                <!--Final tarjetas de noticias-->
+                <div class="container-fluid gap-4" id="author y formulario">
+                    <div class="align-content-end gap-4" id="author">
+                        <div class="card bg-light mx-2 mt-1 mb-4 contenedor" style="max-width: 100%; border: 1px;">
+                            <div class="card-header">Autor</div>
+                            <div class="card-body">
+                                <img class="rounded-circle img-fluid card-img m-2" style="height: 10em; width: 10em;" src="https://media.licdn.com/dms/image/v2/D4E03AQGd16_HMTY_6g/profile-displayphoto-shrink_800_800/B4EZYDoghbHUAc-/0/1743817673262?e=1749686400&v=beta&t=uJJchM9o95ZnFAniVTMYSgYo5KhaLIL7fY7TiNH4SVk" alt="foto perfil">
+                                <div id="nombre y socials">
+                                    <h4 class="card-title">Lisdel Rosales</h4>
+                                    <p class="card-text">Desarrollador Web en formación | Técnico en Seguridad Informática | Buscando primera experiencia en IT</p>
+                                    <div class="card-text d-block" id="socials">
+                                        <a href="https://www.linkedin.com/in/lisdel-jos%C3%A9-rosales-torres-271b0b31a/">Ver perfil en:  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin align-text-bottom" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                        </svg> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card form" id="formulario">
+                    <form action="/suscribirse" method="post">
+                            <fieldset class="mx-3 my-4 p-2">
+                            <legend>Suscríbete para enterarte de cada nueva noticia</legend>
+                            <div>
+                                <label for="inputname" class="form-label mt-4">Nombre</label>
+                                <input type="text" class="form-control" id="inputname" placeholder="Ingrese su Nombre">
+                                <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email">
+                                <label for="msg" class="form-label mt-4">Algo que te gustaría dejarnos saber?</label>
+                                <textarea class="form-control" name="msg" id="msg" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary my-4">Suscribirse</button>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="blockquote-footer">
+            <p class="text-center"><strong>Noticias Tech </strong> 2025 <br><i> Todos los derechos reservados</i></p>
+        </footer>
+    </body>
+</html>

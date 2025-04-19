@@ -1,0 +1,8 @@
+.card:hover{
+    scale: 1.005;
+    box-shadow: 2px 2px 5px black;
+}
+.contenedor{
+    display: flex;
+    justify-content:flex-start
+}
